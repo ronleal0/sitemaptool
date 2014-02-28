@@ -1,4 +1,45 @@
- <form method="post" action="http://localhost/sitemaps/sitemap_parse.php">
-	<input type="text" name="url">
-	<input type="submit" value="submit">
- </form>
+
+
+ <!DOCTYPE html>
+ <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+ <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+ <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+ <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>Sitemap Parse</title>
+         <meta name="description" content="">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+ 	   	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/css/foundation.css">
+         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+         <style>
+			pre{
+				text-align: left;
+			}
+			.row{
+				margin-top: 10%;
+			}
+         </style>
+     </head>
+     <body>
+     	<div class="row">
+				<p>
+					Sitemap Scraper Tool
+				</p>
+     			<form role="form" method="post" action="http://localhost/sitemaps/sitemap_parse.php">
+					<fieldset>
+						<legend>Enter URL</legend>
+						<input class="form-control" type="text" name="url">
+					</fieldset>		
+
+				
+					<div class="form-group">
+						
+						<input class="button right" type="submit" value="submit">
+					</div>
+				 </form>
+     	</div>
+     </body>
+ </html>
